@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>检验报告单（完美间距版）</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+        body { background: #e6f0fa; padding: 0; margin: 0; }
+        .top-wrap { 
+            width: 100%; max-width: 414px; margin: 0 auto; 
+            background: #d9e2ec; 
+            padding-bottom: 20px;
+        }
+        .bottom-wrap { 
+            width: 100%; max-width: 414px; margin: 0 auto; 
+            background: #ffffff; 
+            padding: 35px 0 80px;
+        }
+        .top-close { 
+            background: #000000; color: #ffffff; 
+            padding: 11px 15px; font-size: 17px; 
+            text-align: center; position: relative;
+        }
+        .top-close .close-btn { position: absolute; left: 15px; top: 11px; font-size: 20px; }
+        .top-close .link { font-size: 12px; color: #cccccc; margin-top: 2px; }
+        .report-title { 
+            background: #6a94c4; color: #ffffff; 
+            padding: 18px 15px; margin-top: 1px;
+        }
+        .report-title h2 { font-size: 20px; font-weight: normal; margin-bottom: 8px; }
+        .report-title .time { font-size: 14px; opacity: 0.95; }
+        .space-normal { height: 15px; }
+        .space-large { height: 30px; }
+        .patient-card { 
+            margin: 0 15px; background: #ffffff; 
+            border-radius: 6px; padding: 18px 15px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .patient-card .name { 
+            font-size: 18px; margin-bottom: 18px; padding-bottom: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #333333;
+        }
+        .patient-card .info { 
+            font-size: 16px; margin-bottom: 14px; line-height: 1.7; color: #333333;
+        }
+        .patient-card .info:last-child { margin-bottom: 0; }
+        .test-area { margin: 0 15px; }
+        .test-header { 
+            background: #6a94c4; color: #ffffff; 
+            padding: 13px 15px;
+            border-top-left-radius: 6px; border-top-right-radius: 6px;
+            font-size: 16px; font-weight: 500;
+        }
+        .test-table { 
+            background: #ffffff; 
+            padding: 18px 15px; border: 1px solid #e0e0e0;
+            border-top: none; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .table-top { 
+            display: flex; justify-content: space-between; 
+            font-size: 16px; color: #333333;
+            margin-bottom: 18px;
+        }
+        .table-list .row { 
+            display: flex; justify-content: space-between; 
+            font-size: 16px; color: #333333;
+            padding: 12px 0; border-bottom: 1px solid #e0e0e0;
+        }
+        .table-list .row:last-child { border-bottom: none; }
+        .note { 
+            margin: 0 15px; background: #d9e2ec; 
+            padding: 16px 15px;
+            font-size: 14px; color: #444444; 
+            margin-top: 15px; border-radius: 4px;
+        }
+        .footer-tip { 
+            text-align: center; font-size: 14px; color: #666666; 
+            margin-top: 0;
+        }
+        .footer-btn { 
+            background: #e6f0fa; border: 1px solid #6a94c4; color: #6a94c4;
+            padding: 10px 28px; border-radius: 4px; font-size: 16px;
+            margin-top: 15px; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-wrap">
+        <div class="top-close">
+            <span class="close-btn">×</span>
+            检验报告单详情
+            <div class="link">weixinweb.ngarihealth.com</div>
+        </div>
+        <div class="report-title">
+            <h2>产前分子遗传</h2>
+            <div class="time">报告时间 2025-12-09 15:56:44</div>
+        </div>
+        <div class="space-normal"></div>
+        <div class="patient-card">
+            <div class="name">梅宇 男 33岁</div> <!-- 年龄已改为33岁 -->
+            <div class="info">开单科室 &nbsp;&nbsp;生殖健康科(经开区院区)</div>
+            <div class="info">开单医生 &nbsp;&nbsp;李堂林</div>
+            <div class="info">开单时间 &nbsp;&nbsp;2025-12-09 08:41:34</div>
+            <div class="info">送检时间 &nbsp;&nbsp;2025-12-09 08:41:34</div>
+            <div class="info">检查医生 &nbsp;&nbsp;谭放</div>
+        </div>
+        <div class="space-large"></div>
+        <div class="test-area">
+            <div class="test-header">检验指标</div>
+            <div class="test-table">
+                <div class="table-top">
+                    <div>检验指标:</div>
+                    <div>总数：0</div>
+                    <div>结果</div>
+                </div>
+                <div class="table-list">
+                    <div class="row">
+                        <div>标本状态</div>
+                        <div>正常</div>
+                    </div>
+                    <div class="row">
+                        <div>检测结果</div>
+                        <div>无</div>
+                    </div>
+                    <div class="row">
+                        <div>*高危型HPV(15种)</div>
+                        <div>阴性</div>
+                    </div>
+                    <div class="row">
+                        <div>*低危型HPV(6种)</div>
+                        <div>阴性</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-normal"></div>
+        <div class="note">
+            此报告仅作参考，以医院实际纸质为准
+        </div>
+    </div>
+    <div class="bottom-wrap">
+        <div class="footer-tip">
+            对报告有疑问？立即找医生吧！<br>
+            <button class="footer-btn">预约挂号</button>
+        </div>
+    </div>
+</body>
+</html>
